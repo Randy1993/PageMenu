@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomHeadView" customModule="LZPageMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-HF-5DJ">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="203"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-TU-4TQ">
+                    <rect key="frame" x="0.0" y="139" width="333" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvg-Ru-UsQ">
+                            <rect key="frame" x="20" y="19" width="34" height="30"/>
+                            <state key="normal" title="Back"/>
+                            <connections>
+                                <action selector="backAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gjd-8v-6uR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="8U9-cj-mo4"/>
+                        <constraint firstAttribute="bottom" secondItem="Pvg-Ru-UsQ" secondAttribute="bottom" constant="15" id="AwA-Zq-irP"/>
+                        <constraint firstItem="Pvg-Ru-UsQ" firstAttribute="leading" secondItem="gSM-TU-4TQ" secondAttribute="leading" constant="20" id="vd4-bs-Rm1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gSM-TU-4TQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="67N-Qh-1fF"/>
+                <constraint firstItem="vAm-HF-5DJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Xz-sZ-zyb"/>
+                <constraint firstAttribute="bottom" secondItem="gSM-TU-4TQ" secondAttribute="bottom" id="BGz-Wh-tEj"/>
+                <constraint firstAttribute="trailing" secondItem="gSM-TU-4TQ" secondAttribute="trailing" id="ELn-QN-EM2"/>
+                <constraint firstAttribute="bottom" secondItem="vAm-HF-5DJ" secondAttribute="bottom" id="FUS-g2-ULC"/>
+                <constraint firstAttribute="trailing" secondItem="vAm-HF-5DJ" secondAttribute="trailing" id="So5-58-vAr"/>
+                <constraint firstItem="vAm-HF-5DJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hic-w8-8P3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="barView" destination="gSM-TU-4TQ" id="oPM-rz-SyD"/>
+                <outlet property="barViewHeight" destination="8U9-cj-mo4" id="YYb-We-AmU"/>
+            </connections>
+            <point key="canvasLocation" x="-277" y="-266"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeaderImage.jpeg" width="274" height="184"/>
+    </resources>
+</document>
