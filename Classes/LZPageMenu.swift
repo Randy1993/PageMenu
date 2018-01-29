@@ -211,7 +211,7 @@ fileprivate class LZPageMenuMenuView: UICollectionView, UICollectionViewDataSour
         handTap(indexPath: indexPath)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return CGFloat(configuration.menuItemSpace)
     }
 }
