@@ -1,6 +1,6 @@
 
 ## Introduction
-LZPageMenu is a powerful controller section, not only supports multiple styles of sub-menu, support for carrying the head view, support for OC and Swift, and supports CocoaPods.Not only to achieve the function, but also from memory and performance optimization, such as how to ensure that the current layer only one sub-controller display, and how to complete the menu sub-view of the reuse. Therefore LZPageMenu implementation and the mainstream of the realization of probably there are differences, but there may be more problems, the project is in its infancy, look forward to your advice!
+LZPageMenu is a powerful controller section, not only supports multiple styles of sub-menu, support for carrying the head view, support for Obejective-C and Swift, and supports CocoaPods.Not only to achieve the function, but also from memory and performance optimization, such as how to ensure that the current layer only one sub-controller display, and how to complete the menu sub-view of the reuse. Therefore LZPageMenu implementation and the mainstream of the realization of probably there are differences, but there may be more problems, the project is in its infancy, look forward to your advice!
 
 ## The basic effect
 ![The basic effect.gif](http://upload-images.jianshu.io/upload_images/2077842-aefa600eef091ba4.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
