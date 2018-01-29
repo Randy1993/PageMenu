@@ -47,7 +47,8 @@ LZPageMenu is a powerful controller section, not only supports multiple styles o
 #### One more tables：
 ![Table.PNG](http://upload-images.jianshu.io/upload_images/2077842-e24f118d57f419a9.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## Use
+## Usage
+Add LZPageMenu and LZPageMenuProtocols two files to the project，LZPageMenuProtocols.swift specifies the properties and methods that can be used，LZPageMenu.swift is the control's implementation code.For more details, please refer to the sample project.You can refer to the following ways to use：
 ```
  pageMenu = LZPageMenu.init(frame: CGRect.init(x: 0.0, y: 0.0, width: Demo.screenWidth, height: Demo.screenHeight - Demo.naviBarHeight()))
         for index in 1...10 {
