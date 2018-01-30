@@ -369,9 +369,9 @@ public class LZPageMenu: UIViewController, LZPageMenuPublicProtocol, LZPageMenuP
         var height = CGFloat(selectionIndicatorHeight)
         var x = frame.minX + selectionIndicatorOffset.left
         var y = CGFloat(menuHeight) - menuInset.top - fabs(menuInset.bottom) - height
-        if selectionIndicatorOffset.top > 0 {
+        if selectionIndicatorOffset.top != 0 {
             y = selectionIndicatorOffset.top
-        } else if selectionIndicatorOffset.bottom > 0 {
+        } else if selectionIndicatorOffset.bottom != 0 {
             y -= selectionIndicatorOffset.bottom
         }
         
