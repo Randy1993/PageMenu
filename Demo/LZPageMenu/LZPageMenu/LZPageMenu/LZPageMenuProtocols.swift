@@ -74,6 +74,7 @@ public protocol LZPageMenuPublicProtocol: NSObjectProtocol {
     var enableMenuHorizontalBounce: Bool  {get set}
     /// Whether to allow scroll menu, the default is YES
     var enableMenuScroll: Bool {get set}
+    var enableControllScrollViewBounce: Bool {get set}
     /// Menu width, is useful when setting the menu item breadth equally or displaying in the navigation bar
     var menuWidth: Float? {get set}
     /// When setting the menu item breadth equally, you need to set the menuWidth, otherwise take the screen width.

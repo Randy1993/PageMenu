@@ -240,6 +240,7 @@ public class LZPageMenu: UIViewController, LZPageMenuPublicProtocol, LZPageMenuP
     public var menuContentInset = UIEdgeInsetsMake(0.0, 15.0, 0.0, 15.0)
     public var enableMenuHorizontalBounce = true
     public var enableMenuScroll = true
+    public var enableControllScrollViewBounce = true
     public var menuWidth: Float?
     public var averageMenuWitdh = false
     public var showMenuInNavigationBar = false
@@ -953,6 +954,7 @@ public class LZPageMenu: UIViewController, LZPageMenuPublicProtocol, LZPageMenuP
         menuView.backgroundColor = menuBackgroundColor
         menuScrollView.backgroundColor = menuBackgroundColor
         contollerScrollView.backgroundColor = pageMenuBackgroundColor
+        contollerScrollView.bounces = enableControllScrollViewBounce
         
         setupIndicator()
         setBaseConstraints()
